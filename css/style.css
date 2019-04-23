@@ -9,12 +9,52 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box;
-  padding: 2rem; }
+  box-sizing: border-box; }
+
+.heading-1, .heading-2, .heading-3 {
+  font-family: "Oxygen", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700; }
 
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
-  color: #000;
-  background-color: #fff; }
+  color: #fff; }
+
+.heading-1 {
+  font-size: 4rem; }
+
+.heading-2 {
+  font-size: 3.2rem;
+  font-weight: 400; }
+
+.heading-3 {
+  font-size: 2.3rem;
+  font-weight: 700; }
+
+.footer {
+  background-color: #28411c; }
+
+.container {
+  display: grid;
+  grid-template-rows: 6rem 60vh repeat(3, min-content) 6rem;
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] 14rem [col-end]) [center-end] 1fr [full-end]; }
+
+.header {
+  background-color: #1c2841; }
+
+.navigation {
+  background-color: #c0c0c0; }
+
+.section-about {
+  background-color: #411c28; }
+
+.section-projects {
+  background-color: #3a5283; }
+
+.section-skills {
+  background-color: #622b3d; }
+
+.section-contact {
+  background-color: #3d622b; }

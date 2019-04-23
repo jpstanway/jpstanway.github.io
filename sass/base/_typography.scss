@@ -1,8 +1,30 @@
-// set font properties for body and headings
+// font properties for body and headings
+%heading {
+  font-family: $font-heading;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
 body {
   font-family: $font-default;
   font-size: $default-font-size;
   line-height: 1.5;
-  color: $color-black;
-  background-color: $color-white;
+  color: $color-white;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: 4rem;
+}
+
+.heading-2 {
+  @extend %heading;
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+.heading-3 {
+  @extend %heading;
+  font-size: 2.3rem;
+  font-weight: 700;
 }
