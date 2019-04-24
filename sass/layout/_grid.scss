@@ -1,8 +1,7 @@
 .container {
   display: grid;
-  grid-template-rows: 6rem 60vh repeat(3, min-content) 6rem;
-  grid-template-columns: [full-start] 1fr [center-start] repeat(
-      8,
-      [col-start] 14rem [col-end]
-    ) [center-end] 1fr [full-end];
+  grid-template-rows: 6rem 60vh repeat(4, min-content) 6rem;
+  grid-template-columns:
+    [full-start] 1fr [center-start] repeat(8, [col-start] 14rem [col-end])
+    [center-end] 1fr [full-end];
 }

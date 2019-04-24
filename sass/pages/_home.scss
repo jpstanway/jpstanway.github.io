@@ -1,15 +1,23 @@
 .section-about {
   background-color: $color-secondary;
+  grid-row: 3 / 4;
+  grid-column: center-start / center-end;
 }
 
 .section-projects {
   background-color: $color-primary-light;
+  grid-row: 4 / 5;
+  grid-column: center-start / center-end;
 }
 
 .section-skills {
   background-color: $color-secondary-light;
+  grid-row: 5 / 6;
+  grid-column: center-start / center-end;
 }
 
 .section-contact {
   background-color: $color-tertiary-light;
+  grid-row: 6 / 7;
+  grid-column: center-start / center-end;
 }

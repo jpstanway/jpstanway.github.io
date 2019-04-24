@@ -33,28 +33,94 @@ body {
   font-size: 2.3rem;
   font-weight: 700; }
 
+.u-text-center {
+  text-align: center !important; }
+
+.u-margin-bottom-sm {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-md {
+  margin-bottom: 2.5rem !important; }
+
+.u-margin-bottom-lg {
+  margin-bottom: 3rem !important; }
+
+.u-margin-top-sm {
+  margin-top: 1.5rem !important; }
+
+.u-margin-top-md {
+  margin-top: 2.5rem !important; }
+
+.u-margin-top-lg {
+  margin-top: 3rem !important; }
+
+.btn:link, .btn:visited {
+  font-size: 2rem;
+  color: #c0c0c0;
+  padding: 1rem 3.5rem;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  border: none; }
+
+.btn:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+
+.btn:active {
+  outline: none;
+  transform: translateY(3px);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5); }
+
+.btn--cta {
+  background-color: #28411c;
+  transition: all 0.2s; }
+  .btn--cta:hover {
+    background-color: #3d622b;
+    color: #fff; }
+
 .footer {
-  background-color: #28411c; }
+  background-color: #28411c;
+  grid-row: 7 / 8;
+  grid-column: full-start / full-end; }
 
 .container {
   display: grid;
-  grid-template-rows: 6rem 60vh repeat(3, min-content) 6rem;
+  grid-template-rows: 6rem 60vh repeat(4, min-content) 6rem;
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] 14rem [col-end]) [center-end] 1fr [full-end]; }
 
 .header {
-  background-color: #1c2841; }
+  background-color: #1c2841;
+  grid-row: 2 / 3;
+  grid-column: full-start / full-end;
+  display: grid;
+  justify-items: center;
+  align-items: center; }
+  .header__title-box {
+    width: 60%;
+    margin-top: -10%; }
 
 .navigation {
-  background-color: #c0c0c0; }
+  background-color: #c0c0c0;
+  grid-row: 1 / 2;
+  grid-column: full-start / full-end; }
 
 .section-about {
-  background-color: #411c28; }
+  background-color: #411c28;
+  grid-row: 3 / 4;
+  grid-column: center-start / center-end; }
 
 .section-projects {
-  background-color: #3a5283; }
+  background-color: #3a5283;
+  grid-row: 4 / 5;
+  grid-column: center-start / center-end; }
 
 .section-skills {
-  background-color: #622b3d; }
+  background-color: #622b3d;
+  grid-row: 5 / 6;
+  grid-column: center-start / center-end; }
 
 .section-contact {
-  background-color: #3d622b; }
+  background-color: #3d622b;
+  grid-row: 6 / 7;
+  grid-column: center-start / center-end; }

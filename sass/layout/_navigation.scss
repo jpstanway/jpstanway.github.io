@@ -1,3 +1,5 @@
 .navigation {
   background-color: $color-grey-light;
+  grid-row: 1 / 2;
+  grid-column: full-start / full-end;
 }

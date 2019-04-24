@@ -1,3 +1,14 @@
 .header {
   background-color: $color-primary;
+  grid-row: 2 / 3;
+  grid-column: full-start / full-end;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  &__title-box {
+    width: 60%;
+    margin-top: -10%;
+  }
 }
