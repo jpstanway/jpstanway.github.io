@@ -81,17 +81,17 @@ body {
 
 .footer {
   background-color: #28411c;
-  grid-row: 7 / 8;
+  grid-row: 6 / 7;
   grid-column: full-start / full-end; }
 
 .container {
   display: grid;
-  grid-template-rows: 6rem 60vh repeat(4, min-content) 6rem;
+  grid-template-rows: 60vh repeat(4, min-content) 6rem;
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] 14rem [col-end]) [center-end] 1fr [full-end]; }
 
 .header {
   background-color: #1c2841;
-  grid-row: 2 / 3;
+  grid-row: 1 / 2;
   grid-column: full-start / full-end;
   display: grid;
   justify-items: center;
@@ -101,26 +101,45 @@ body {
     margin-top: -10%; }
 
 .navigation {
-  background-color: #c0c0c0;
-  grid-row: 1 / 2;
-  grid-column: full-start / full-end; }
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6rem; }
+  .navigation__nav {
+    height: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .navigation__menu {
+    list-style: none; }
+  .navigation__item {
+    display: inline-block; }
+    .navigation__item:not(:last-child) {
+      margin-right: 1rem; }
+  .navigation__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff; }
 
 .section-about {
   background-color: #411c28;
-  grid-row: 3 / 4;
+  grid-row: 2 / 3;
   grid-column: center-start / center-end; }
 
 .section-projects {
   background-color: #3a5283;
-  grid-row: 4 / 5;
+  grid-row: 3 / 4;
   grid-column: center-start / center-end; }
 
 .section-skills {
   background-color: #622b3d;
-  grid-row: 5 / 6;
+  grid-row: 4 / 5;
   grid-column: center-start / center-end; }
 
 .section-contact {
   background-color: #3d622b;
-  grid-row: 6 / 7;
+  grid-row: 5 / 6;
   grid-column: center-start / center-end; }
