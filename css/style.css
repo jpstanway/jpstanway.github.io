@@ -86,7 +86,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 60vh repeat(4, min-content) 6rem;
+  grid-template-rows: 60vh repeat(4, min-content) 6rem 100vh;
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] 14rem [col-end]) [center-end] 1fr [full-end]; }
 
 .header {
@@ -106,7 +106,9 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 6rem; }
+  height: 8rem;
+  transition: all 0.5s;
+  z-index: 100; }
   .navigation__nav {
     height: 100%;
     padding: 2rem;
@@ -123,6 +125,11 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: #fff; }
+  .navigation--scroll {
+    background-color: #3a5283;
+    height: 6rem; }
+    .navigation--scroll .navigation__name h2 {
+      font-size: 2.5rem; }
 
 .section-about {
   background-color: #411c28;
