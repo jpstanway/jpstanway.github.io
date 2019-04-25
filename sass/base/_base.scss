@@ -14,4 +14,11 @@ html {
 
 body {
   box-sizing: border-box;
+  background-image: linear-gradient(
+      rgba($color-primary, 0.9),
+      rgba($color-primary, 0.9)
+    ),
+    url(../../img/milky-way.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
