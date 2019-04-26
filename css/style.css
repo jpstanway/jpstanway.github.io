@@ -82,6 +82,12 @@ body {
     background-color: #3d622b;
     color: #fff; }
 
+.about {
+  width: 60%;
+  display: flex; }
+  .about__portrait {
+    margin-right: 2rem; }
+
 .footer {
   background-color: #28411c;
   grid-row: 6 / 7;
@@ -89,7 +95,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 60vh repeat(4, 50rem) 6rem;
+  grid-template-rows: 60vh min-content repeat(3, 50rem) 6rem;
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] 14rem [col-end]) [center-end] 1fr [full-end]; }
 
 .header {
@@ -142,9 +148,11 @@ body {
       font-size: 2.5rem; }
 
 .section-about {
-  background-color: #411c28;
   grid-row: 2 / 3;
-  grid-column: center-start / center-end; }
+  grid-column: center-start / center-end;
+  padding: 5rem;
+  display: flex;
+  justify-content: center; }
 
 .section-projects {
   background-color: #3a5283;

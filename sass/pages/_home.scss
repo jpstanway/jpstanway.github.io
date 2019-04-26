@@ -1,7 +1,10 @@
 .section-about {
-  background-color: $color-secondary;
   grid-row: 2 / 3;
   grid-column: center-start / center-end;
+  padding: 5rem;
+
+  display: flex;
+  justify-content: center;
 }
 
 .section-projects {
