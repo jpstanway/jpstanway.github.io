@@ -3,8 +3,9 @@
   grid-column: center-start / center-end;
   padding: 5rem;
 
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5rem;
 }
 
 .section-projects {

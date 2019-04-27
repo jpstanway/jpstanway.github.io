@@ -82,11 +82,19 @@ body {
     background-color: #3d622b;
     color: #fff; }
 
-.about {
-  width: 60%;
-  display: flex; }
-  .about__portrait {
-    margin-right: 2rem; }
+.feature {
+  padding: 2rem;
+  display: flex;
+  color: #c0c0c0; }
+  .feature__img {
+    margin-right: 1rem;
+    padding-right: 1rem;
+    border-right: 1px solid #c0c0c0; }
+  .feature__title {
+    line-height: 1;
+    margin-bottom: 1rem; }
+  .feature__text {
+    font-size: 1.8rem; }
 
 .footer {
   background-color: #28411c;
@@ -151,8 +159,9 @@ body {
   grid-row: 2 / 3;
   grid-column: center-start / center-end;
   padding: 5rem;
-  display: flex;
-  justify-content: center; }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 5rem; }
 
 .section-projects {
   background-color: #3a5283;
