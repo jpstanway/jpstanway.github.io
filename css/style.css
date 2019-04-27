@@ -10,7 +10,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-image: linear-gradient(rgba(28, 40, 65, 0.9), rgba(28, 40, 65, 0.9)), url(../../img/milky-way.jpg);
+  background-image: linear-gradient(rgba(58, 82, 131, 0.5), rgba(58, 82, 131, 0.5)), url(../../img/milky-way.jpg);
   background-size: cover;
   background-attachment: fixed; }
 
@@ -85,7 +85,7 @@ body {
 .feature {
   padding: 2rem;
   display: flex;
-  color: #c0c0c0; }
+  color: #fff; }
   .feature__img {
     margin-right: 1rem;
     padding-right: 1rem;
@@ -103,7 +103,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 60vh min-content repeat(3, 50rem) 6rem;
+  grid-template-rows: 75vh min-content repeat(3, 50rem) 6rem;
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] 14rem [col-end]) [center-end] 1fr [full-end]; }
 
 .header {
@@ -114,8 +114,7 @@ body {
   justify-items: center;
   align-items: center; }
   .header__title-box {
-    width: 60%;
-    margin-top: -10%; }
+    width: 60%; }
 
 .navigation__link, .navigation__name a {
   text-decoration: none;
