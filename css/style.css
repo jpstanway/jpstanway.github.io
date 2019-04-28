@@ -59,7 +59,7 @@ body {
 
 .btn:link, .btn:visited {
   font-size: 2rem;
-  color: #c0c0c0;
+  color: #fff;
   padding: 1rem 3.5rem;
   text-decoration: none;
   display: inline-block;
@@ -76,11 +76,10 @@ body {
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5); }
 
 .btn--cta {
-  background-color: #28411c;
+  background-color: #3d622b;
   transition: all 0.2s; }
   .btn--cta:hover {
-    background-color: #3d622b;
-    color: #fff; }
+    background-color: #53853b; }
 
 .feature {
   padding: 2rem;
@@ -96,6 +95,11 @@ body {
   .feature__text {
     font-size: 1.8rem; }
 
+.project__thumbnail {
+  width: 100%;
+  display: block;
+  border-radius: 2px; }
+
 .footer {
   background-color: #28411c;
   grid-row: 6 / 7;
@@ -103,11 +107,10 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 75vh min-content repeat(3, 50rem) 6rem;
+  grid-template-rows: 75vh repeat(2, min-content) repeat(2, 50rem) 6rem;
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] 14rem [col-end]) [center-end] 1fr [full-end]; }
 
 .header {
-  background-color: transparent;
   grid-row: 1 / 2;
   grid-column: full-start / full-end;
   display: grid;
@@ -163,9 +166,14 @@ body {
   grid-column-gap: 5rem; }
 
 .section-projects {
-  background-color: #3a5283;
+  background-image: linear-gradient(to right bottom, #1c2841, #3a5283);
   grid-row: 3 / 4;
-  grid-column: center-start / center-end; }
+  grid-column: full-start / full-end;
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(min-content, 30rem));
+  grid-gap: 5rem;
+  justify-content: center; }
 
 .section-skills {
   background-color: #622b3d;

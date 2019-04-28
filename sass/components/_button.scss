@@ -2,7 +2,7 @@
   &:link,
   &:visited {
     font-size: 2rem;
-    color: $color-grey-light;
+    color: $color-white;
     padding: 1rem 3.5rem;
     text-decoration: none;
     display: inline-block;
@@ -23,12 +23,11 @@
   }
 
   &--cta {
-    background-color: $color-tertiary;
+    background-color: $color-tertiary-light;
     transition: all 0.2s;
 
     &:hover {
-      background-color: $color-tertiary-light;
-      color: $color-white;
+      background-color: lighten($color-tertiary-light, 10%);
     }
   }
 }
