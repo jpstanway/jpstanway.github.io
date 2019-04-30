@@ -95,10 +95,38 @@ body {
   .feature__text {
     font-size: 1.8rem; }
 
+.project__preview {
+  position: relative;
+  overflow: hidden; }
+  .project__preview:hover .project__thumbnail {
+    transform: scale(1.1);
+    filter: blur(3px) brightness(80%); }
+  .project__preview:hover .project__links {
+    transform: translate(-50%, -50%);
+    opacity: 1; }
+
 .project__thumbnail {
   width: 100%;
   display: block;
-  border-radius: 2px; }
+  border-radius: 2px;
+  transition: all 0.5s; }
+
+.project__links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 200%);
+  opacity: 0;
+  transition: all 0.5s; }
+
+.project__project-link {
+  cursor: pointer; }
+  .project__project-link:not(:last-child) {
+    margin-right: 2rem; }
+  .project__project-link i {
+    color: #fff; }
+  .project__project-link:hover i {
+    color: #c0c0c0; }
 
 .footer {
   background-color: #28411c;

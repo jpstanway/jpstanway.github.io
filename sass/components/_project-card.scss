@@ -1,14 +1,51 @@
 .project {
+  &__preview {
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+      .project__thumbnail {
+        transform: scale(1.1);
+        filter: blur(3px) brightness(80%);
+      }
+
+      .project__links {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+      }
+    }
+  }
+
   &__thumbnail {
     width: 100%;
     display: block;
     border-radius: 2px;
+    transition: all 0.5s;
   }
 
   &__links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 200%);
+    opacity: 0;
+    transition: all 0.5s;
   }
 
   &__project-link {
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    i {
+      color: $color-white;
+    }
+
+    &:hover i {
+      color: $color-grey-light;
+    }
   }
 
   &__title {
