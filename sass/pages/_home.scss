@@ -17,11 +17,18 @@
   grid-row: 3 / 4;
   grid-column: full-start / full-end;
   padding: 5rem 0;
+  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
 
-  display: grid;
-  grid-template-columns: repeat(3, minmax(min-content, 30rem));
-  grid-gap: 5rem;
-  justify-content: center;
+  &__heading {
+    padding-bottom: 5rem;
+  }
+
+  &__projects {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 30rem));
+    grid-gap: 5rem;
+    justify-content: center;
+  }
 }
 
 .section-skills {

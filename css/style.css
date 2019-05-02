@@ -97,7 +97,8 @@ body {
 
 .project__preview {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
   .project__preview:hover .project__thumbnail {
     transform: scale(1.1);
     filter: blur(3px) brightness(80%); }
@@ -127,6 +128,9 @@ body {
     color: #fff; }
   .project__project-link:hover i {
     color: #c0c0c0; }
+
+.project__title {
+  padding: 1.5rem 0 1rem 0; }
 
 .footer {
   background-color: #28411c;
@@ -198,10 +202,14 @@ body {
   grid-row: 3 / 4;
   grid-column: full-start / full-end;
   padding: 5rem 0;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(min-content, 30rem));
-  grid-gap: 5rem;
-  justify-content: center; }
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+  .section-projects__heading {
+    padding-bottom: 5rem; }
+  .section-projects__projects {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, 30rem));
+    grid-gap: 5rem;
+    justify-content: center; }
 
 .section-skills {
   background-color: #622b3d;

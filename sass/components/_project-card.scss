@@ -2,6 +2,7 @@
   &__preview {
     position: relative;
     overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.5);
 
     &:hover {
       .project__thumbnail {
@@ -49,8 +50,6 @@
   }
 
   &__title {
-  }
-
-  &__description {
+    padding: 1.5rem 0 1rem 0;
   }
 }
