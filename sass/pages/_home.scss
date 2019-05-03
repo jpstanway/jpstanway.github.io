@@ -19,10 +19,6 @@
   padding: 5rem 0;
   box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
 
-  &__heading {
-    padding-bottom: 5rem;
-  }
-
   &__projects {
     display: grid;
     grid-template-columns: repeat(3, minmax(min-content, 30rem));
@@ -32,9 +28,9 @@
 }
 
 .section-skills {
-  background-color: $color-secondary-light;
   grid-row: 4 / 5;
   grid-column: center-start / center-end;
+  padding: 5rem 0;
 }
 
 .section-contact {
