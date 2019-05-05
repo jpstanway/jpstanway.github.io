@@ -31,6 +31,11 @@
   grid-row: 4 / 5;
   grid-column: center-start / center-end;
   padding: 5rem 0;
+
+  &__skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .section-contact {

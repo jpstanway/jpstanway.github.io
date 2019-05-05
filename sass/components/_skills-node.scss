@@ -1,6 +1,7 @@
 .skills-node {
   display: grid;
   justify-items: center;
+  margin-bottom: 5rem;
 
   &__shape {
     width: 15rem;
@@ -17,12 +18,5 @@
 
   &__img {
     width: 100%;
-    // position: absolute;
-    // top: 50%;
-    // bottom: 50%;
-    // transform: translateY(-50%);
-  }
-
-  &__description {
   }
 }

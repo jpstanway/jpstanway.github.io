@@ -137,7 +137,8 @@ body {
 
 .skills-node {
   display: grid;
-  justify-items: center; }
+  justify-items: center;
+  margin-bottom: 5rem; }
   .skills-node__shape {
     width: 15rem;
     height: 15rem;
@@ -232,6 +233,9 @@ body {
   grid-row: 4 / 5;
   grid-column: center-start / center-end;
   padding: 5rem 0; }
+  .section-skills__skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
 
 .section-contact {
   background-color: #3d622b;
