@@ -6,7 +6,7 @@
   &__shape {
     width: 15rem;
     height: 15rem;
-    background-color: $color-grey-light;
+    background-color: $color-grey-lighter;
     border-radius: 50%;
     border: 0.5rem solid $color-grey-dark;
     padding: 1rem;
@@ -15,10 +15,28 @@
 
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   &__img {
-    width: 100%;
+    width: 80%;
+
+    &--sm {
+      width: 100%;
+    }
+
+    &--lg {
+      width: 60%;
+    }
+  }
+
+  &__icon {
+    &--js {
+      color: yellow;
+    }
+
+    &--git {
+    }
   }
 
   &__description {
