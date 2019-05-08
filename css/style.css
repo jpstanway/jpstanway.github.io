@@ -85,9 +85,11 @@ body {
     background-color: #53853b; }
 
 .contact {
-  background-color: orangered;
+  background-color: #fff;
+  color: #909090;
   height: 30rem;
   width: 75rem;
+  border-radius: 4px;
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
   .contact__info {
@@ -103,7 +105,34 @@ body {
     .contact__social-item:not(:last-child) {
       margin-right: 2rem; }
   .contact__social-icon {
-    color: #fff; }
+    color: #909090; }
+  .contact__dev-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+  .contact__portrait-frame {
+    width: 150px;
+    height: 150px;
+    position: relative; }
+  .contact__portrait-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 20; }
+  .contact__portrait {
+    max-width: 150px;
+    max-height: 150px;
+    border: 2px solid #1c2841;
+    border-radius: 50%;
+    overflow: hidden; }
+  .contact__name {
+    font-size: 1.8rem;
+    font-weight: 700; }
 
 .feature {
   padding: 2rem;
