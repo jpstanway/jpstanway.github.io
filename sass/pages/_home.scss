@@ -42,7 +42,10 @@
 }
 
 .section-contact {
-  background-color: $color-tertiary-light;
   grid-row: 5 / 6;
   grid-column: center-start / center-end;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
 }
