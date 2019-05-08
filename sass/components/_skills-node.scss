@@ -13,6 +13,11 @@
     box-shadow: 0 0.25rem 0.5rem rgba($color-black, 0.2);
     z-index: 100;
 
+    // -webkit-clip-path: circle(50% at 50% 50%);
+    // clip-path: circle(50% at 50% 50%);
+    // -webkit-shape-outside: circle(50% at 50% 50%);
+    // shape-outside: circle(50% at 50% 50%);
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,17 +35,18 @@
     }
   }
 
-  &__icon {
-    &--js {
-      color: yellow;
-    }
-
-    &--git {
-    }
-  }
-
   &__description {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 108%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 100;
+
+    &--top {
+      top: -8%;
+    }
   }
 
   &__connector {
