@@ -1,5 +1,18 @@
 .footer {
-  background-color: $color-tertiary;
+  background-color: $color-primary;
   grid-row: 6 / 7;
   grid-column: full-start / full-end;
+  padding: 5rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__back-to-top:hover &__icon {
+    color: $color-grey-dark;
+  }
+
+  &__icon {
+    color: $color-grey-light;
+  }
 }

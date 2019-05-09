@@ -237,9 +237,17 @@ body {
       width: 25rem; }
 
 .footer {
-  background-color: #28411c;
+  background-color: #1c2841;
   grid-row: 6 / 7;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  padding: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .footer__back-to-top:hover .footer__icon {
+    color: #909090; }
+  .footer__icon {
+    color: #c0c0c0; }
 
 .container {
   display: grid;
