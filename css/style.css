@@ -301,6 +301,9 @@ body {
     .navigation--scroll .navigation__name h2 {
       font-size: 2.5rem; }
 
+.active {
+  color: #c0c0c0; }
+
 .section-about {
   grid-row: 2 / 3;
   grid-column: center-start / center-end;
