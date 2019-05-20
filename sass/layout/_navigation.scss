@@ -61,3 +61,10 @@
 .active {
   color: $color-grey-light;
 }
+
+.anchor {
+  display: block;
+  visibility: hidden;
+  position: relative;
+  top: -9rem;
+}

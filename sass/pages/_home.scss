@@ -3,9 +3,11 @@
   grid-column: center-start / center-end;
   padding: 5rem;
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 5rem;
+  &__features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5rem;
+  }
 }
 
 .section-projects {

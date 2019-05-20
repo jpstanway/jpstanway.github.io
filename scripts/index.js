@@ -1,11 +1,13 @@
 $(document).ready(() => {
   const navbar = $("#navbar");
-  let navItems = navbar.find("a.navigation__link");
-  let sections = $(".section");
+
+  const navbarHeight = navbar.outerHeight();
+  let anchors = $(".anchor");
 
   $(document).scroll(() => {
     let position = $(document).scrollTop();
-    let current, active;
+    let scrollPos = Math.floor(position + $(window).height());
+    let current, navItem;
 
     // detach navbar on scroll
     if (position > 100) {
@@ -17,14 +19,25 @@ $(document).ready(() => {
     }
 
     // set active nav item on scroll
-    for (let i = 0; i < sections.length; i++) {
-      if (sections[i].offsetTop <= position) {
-        current = sections[i].id;
+    for (let i = 0; i < anchors.length; i++) {
+      if (anchors[i].offsetTop - navbarHeight <= position) {
+        current = anchors[i].id;
       }
     }
 
     navbar.find(".active").removeClass("active");
-    let navItem = navbar.find('a[href="#' + current + '"]');
+    navItem = navbar.find('a[href="#' + current + '"]');
     navItem.addClass("active");
+
+    // if window is scrolled to the bottom, make last section active
+    if (
+      scrollPos == $(document).height() ||
+      scrollPos + 1 == $(document).height() ||
+      scrollPos - 1 == $(document).height()
+    ) {
+      navbar.find(".active").removeClass("active");
+      navItem = navbar.find('a[href="#contact"]');
+      navItem.addClass("active");
+    }
   });
 });

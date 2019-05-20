@@ -251,7 +251,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 75vh repeat(3, min-content) 50rem 6rem;
+  grid-template-rows: 75vh repeat(3, min-content) 60rem 6rem;
   grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] 14rem [col-end]) [center-end] 1fr [full-end]; }
 
 .header {
@@ -304,13 +304,20 @@ body {
 .active {
   color: #c0c0c0; }
 
+.anchor {
+  display: block;
+  visibility: hidden;
+  position: relative;
+  top: -9rem; }
+
 .section-about {
   grid-row: 2 / 3;
   grid-column: center-start / center-end;
-  padding: 5rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 5rem; }
+  padding: 5rem; }
+  .section-about__features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5rem; }
 
 .section-projects {
   background-image: linear-gradient(to right bottom, #1c2841, #3a5283);
