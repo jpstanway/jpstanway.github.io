@@ -24,41 +24,17 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   color: #fff; }
-  @media only screen and (max-width: 56.25em) {
-    body {
-      font-size: 2.1rem; } }
-  @media only screen and (max-width: 43.75em) {
-    body {
-      font-size: 2.6rem; } }
 
 .heading-1 {
   font-size: 4rem; }
-  @media only screen and (max-width: 56.25em) {
-    .heading-1 {
-      font-size: 4.5rem; } }
-  @media only screen and (max-width: 43.75em) {
-    .heading-1 {
-      font-size: 5rem; } }
 
 .heading-2 {
   font-size: 3.2rem;
   font-weight: 400; }
-  @media only screen and (max-width: 56.25em) {
-    .heading-2 {
-      font-size: 3.7rem; } }
-  @media only screen and (max-width: 43.75em) {
-    .heading-2 {
-      font-size: 4.2rem; } }
 
 .heading-3 {
   font-size: 2.3rem;
   font-weight: 700; }
-  @media only screen and (max-width: 56.25em) {
-    .heading-3 {
-      font-size: 2.8rem; } }
-  @media only screen and (max-width: 43.75em) {
-    .heading-3 {
-      font-size: 3.3rem; } }
 
 .u-text-center {
   text-align: center !important; }
@@ -177,12 +153,6 @@ body {
     margin-bottom: 1rem; }
   .feature__text {
     font-size: 1.8rem; }
-    @media only screen and (max-width: 56.25em) {
-      .feature__text {
-        font-size: 2.3rem; } }
-    @media only screen and (max-width: 43.75em) {
-      .feature__text {
-        font-size: 2.8rem; } }
 
 .project__preview {
   position: relative;
@@ -282,7 +252,7 @@ body {
 .container {
   display: grid;
   grid-template-rows: 70vh repeat(3, min-content) 60rem 6rem;
-  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] 14rem [col-end]) [center-end] 1fr [full-end]; }
+  grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] minmax(2rem, 1fr) [full-end]; }
 
 .header {
   grid-row: 1 / 2;
@@ -359,19 +329,20 @@ body {
   background-image: linear-gradient(to right bottom, #1c2841, #3a5283);
   grid-row: 3 / 4;
   grid-column: full-start / full-end;
-  padding: 5rem 0;
+  padding: 5rem 2rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
-  @media only screen and (max-width: 43.75em) {
-    .section-projects {
-      padding: 5rem; } }
   .section-projects__projects {
+    grid-column: center-start / center-end;
     display: grid;
-    grid-template-columns: repeat(3, minmax(min-content, 30rem));
+    grid-template-columns: repeat(3, minmax(15rem, 30rem));
     grid-gap: 5rem;
     justify-content: center; }
+    @media only screen and (max-width: 62.5em) {
+      .section-projects__projects {
+        grid-template-columns: repeat(2, minmax(15rem, 30rem)); } }
     @media only screen and (max-width: 43.75em) {
       .section-projects__projects {
-        grid-template-columns: repeat(2, minmax(min-content, 1fr)); } }
+        grid-template-columns: minmax(15rem, 30rem); } }
 
 .section-skills {
   grid-row: 4 / 5;

@@ -26,21 +26,22 @@
   );
   grid-row: 3 / 4;
   grid-column: full-start / full-end;
-  padding: 5rem 0;
+  padding: 5rem 2rem;
   box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
 
-  @media only screen and (max-width: $bp-small) {
-    padding: 5rem;
-  }
-
   &__projects {
+    grid-column: center-start / center-end;
     display: grid;
-    grid-template-columns: repeat(3, minmax(min-content, 30rem));
+    grid-template-columns: repeat(3, minmax(15rem, 30rem));
     grid-gap: 5rem;
     justify-content: center;
 
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(2, minmax(15rem, 30rem));
+    }
+
     @media only screen and (max-width: $bp-small) {
-      grid-template-columns: repeat(2, minmax(min-content, 1fr));
+      grid-template-columns: minmax(15rem, 30rem);
     }
   }
 }

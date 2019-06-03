@@ -2,6 +2,9 @@
   display: grid;
   grid-template-rows: 70vh repeat(3, min-content) 60rem 6rem;
   grid-template-columns:
-    [full-start] 1fr [center-start] repeat(8, [col-start] 14rem [col-end])
-    [center-end] 1fr [full-end];
+    [full-start] minmax(2rem, 1fr) [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 1fr) [col-end]
+    )
+    [center-end] minmax(2rem, 1fr) [full-end];
 }
