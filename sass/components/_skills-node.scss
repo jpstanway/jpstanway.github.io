@@ -3,6 +3,19 @@
   justify-items: center;
   position: relative;
 
+  &--javascript {
+    @media only screen and (max-width: $bp-small) {
+      grid-row: 1 / 2;
+      grid-column: 1 / -1;
+    }
+  }
+
+  &--mongo {
+    @media only screen and (max-width: $bp-smallest) {
+      grid-row: 5 / 6;
+    }
+  }
+
   &__shape {
     width: 15rem;
     height: 15rem;
@@ -47,6 +60,13 @@
     &--top {
       top: -8%;
     }
+
+    &--react,
+    &--css {
+      @media only screen and (max-width: $bp-smallest) {
+        top: -8%;
+      }
+    }
   }
 
   &__connector {
@@ -62,6 +82,14 @@
       top: 100%;
       transform: translateX(-50%) rotate(90deg);
       width: 25rem;
+    }
+
+    &--horizontal {
+      @media only screen and (max-width: $bp-smallest) {
+        top: 100%;
+        transform: translateX(-50%) rotate(90deg);
+        width: 25rem;
+      }
     }
   }
 }

@@ -195,6 +195,13 @@ body {
   display: grid;
   justify-items: center;
   position: relative; }
+  @media only screen and (max-width: 43.75em) {
+    .skills-node--javascript {
+      grid-row: 1 / 2;
+      grid-column: 1 / -1; } }
+  @media only screen and (max-width: 31.25em) {
+    .skills-node--mongo {
+      grid-row: 5 / 6; } }
   .skills-node__shape {
     width: 15rem;
     height: 15rem;
@@ -223,6 +230,9 @@ body {
     z-index: 100; }
     .skills-node__description--top {
       top: -8%; }
+    @media only screen and (max-width: 31.25em) {
+      .skills-node__description--react, .skills-node__description--css {
+        top: -8%; } }
   .skills-node__connector {
     background-color: #909090;
     position: absolute;
@@ -235,6 +245,11 @@ body {
       top: 100%;
       transform: translateX(-50%) rotate(90deg);
       width: 25rem; }
+    @media only screen and (max-width: 31.25em) {
+      .skills-node__connector--horizontal {
+        top: 100%;
+        transform: translateX(-50%) rotate(90deg);
+        width: 25rem; } }
 
 .footer {
   background-color: #1c2841;
@@ -354,6 +369,12 @@ body {
     justify-content: center;
     align-content: center;
     grid-gap: 7rem; }
+    @media only screen and (max-width: 43.75em) {
+      .section-skills__skills {
+        grid-template-columns: repeat(2, min-content); } }
+    @media only screen and (max-width: 31.25em) {
+      .section-skills__skills {
+        grid-template-columns: min-content; } }
 
 .section-contact {
   grid-row: 5 / 6;
