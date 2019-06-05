@@ -3,10 +3,22 @@
   display: flex;
   color: $color-white;
 
+  @media only screen and (max-width: $bp-large) {
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    justify-content: flex-start;
+  }
+
   &__img {
     margin-right: 1rem;
     padding-right: 1rem;
     border-right: 1px solid $color-grey-light;
+
+    &--mobile {
+      padding: 0 6px;
+    }
   }
 
   &__title {
@@ -16,5 +28,25 @@
 
   &__text {
     font-size: 1.8rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: $default-font-size;
+    }
+  }
+
+  &--top {
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &--top &__content {
+    @media only screen and (max-width: $bp-medium) {
+      width: 40rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      width: 100%;
+    }
   }
 }

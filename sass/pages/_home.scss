@@ -3,17 +3,23 @@
   grid-column: center-start / center-end;
   padding: 5rem;
 
-  @media only screen and (max-width: $bp-small) {
-    padding: 2rem;
+  @media only screen and (max-width: $bp-large) {
+    padding: 5rem 0;
   }
 
   &__features {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 5rem;
+    grid-row-gap: 3rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 2rem;
+    }
 
     @media only screen and (max-width: $bp-small) {
-      grid-column-gap: 2rem;
+      grid-template-columns: 1fr;
     }
   }
 }
