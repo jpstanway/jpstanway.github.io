@@ -28,25 +28,11 @@
 
   &__text {
     font-size: 1.8rem;
-
-    @media only screen and (max-width: $bp-small) {
-      font-size: $default-font-size;
-    }
   }
 
   &--top {
     @media only screen and (max-width: $bp-medium) {
       grid-column: 1 / -1;
-    }
-  }
-
-  &--top &__content {
-    @media only screen and (max-width: $bp-medium) {
-      width: 40rem;
-    }
-
-    @media only screen and (max-width: $bp-small) {
-      width: 100%;
     }
   }
 }

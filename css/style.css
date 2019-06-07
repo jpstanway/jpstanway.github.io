@@ -7,6 +7,9 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 43.75em) {
+    html {
+      font-size: 55%; } }
 
 body {
   box-sizing: border-box;
@@ -27,10 +30,16 @@ body {
 
 .heading-1 {
   font-size: 4rem; }
+  @media only screen and (max-width: 31.25em) {
+    .heading-1 {
+      font-size: 3.5rem; } }
 
 .heading-2 {
   font-size: 3.2rem;
   font-weight: 400; }
+  @media only screen and (max-width: 31.25em) {
+    .heading-2 {
+      font-size: 2.8rem; } }
 
 .heading-3 {
   font-size: 2.3rem;
@@ -67,6 +76,7 @@ body {
   text-decoration: none;
   display: inline-block;
   position: relative;
+  border-radius: 2px;
   cursor: pointer;
   border: none; }
 
@@ -97,7 +107,7 @@ body {
   @media only screen and (max-width: 43.75em) {
     .contact {
       background-image: linear-gradient(180deg, white 0%, white 50%, #1c2841 50%);
-      height: 40rem;
+      height: 45rem;
       border-radius: 0;
       grid-template-columns: 1fr;
       padding: 2rem; } }
@@ -172,18 +182,9 @@ body {
     margin-bottom: 1rem; }
   .feature__text {
     font-size: 1.8rem; }
-    @media only screen and (max-width: 43.75em) {
-      .feature__text {
-        font-size: 1.6rem; } }
   @media only screen and (max-width: 62.5em) {
     .feature--top {
       grid-column: 1 / -1; } }
-  @media only screen and (max-width: 62.5em) {
-    .feature--top .feature__content {
-      width: 40rem; } }
-  @media only screen and (max-width: 43.75em) {
-    .feature--top .feature__content {
-      width: 100%; } }
 
 .project__preview {
   position: relative;
@@ -308,6 +309,12 @@ body {
   align-items: center; }
   .header__title-box {
     width: 60%; }
+    @media only screen and (max-width: 43.75em) {
+      .header__title-box {
+        width: 80%; } }
+    @media only screen and (max-width: 31.25em) {
+      .header__title-box {
+        width: 90%; } }
 
 .navigation__link, .navigation__name a {
   text-decoration: none;
