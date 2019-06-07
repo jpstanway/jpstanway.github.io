@@ -337,8 +337,38 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+  .navigation__checkbox {
+    display: none; }
+  .navigation__btn {
+    width: 7rem;
+    height: 7rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .navigation__icon {
+    display: none;
+    position: relative; }
+    @media only screen and (max-width: 43.75em) {
+      .navigation__icon {
+        display: inline-block; } }
+    .navigation__icon, .navigation__icon::before, .navigation__icon::after {
+      width: 5rem;
+      height: 2px;
+      background-color: #fff; }
+    .navigation__icon::before, .navigation__icon::after {
+      content: "";
+      position: absolute;
+      left: 0; }
+    .navigation__icon::before {
+      top: -1.5rem; }
+    .navigation__icon::after {
+      top: 1.5rem; }
   .navigation__menu {
     list-style: none; }
+    @media only screen and (max-width: 43.75em) {
+      .navigation__menu {
+        display: none; } }
   .navigation__item {
     display: inline-block; }
     .navigation__item:not(:last-child) {

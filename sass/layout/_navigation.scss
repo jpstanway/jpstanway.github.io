@@ -25,8 +25,58 @@
     justify-content: space-between;
   }
 
+  &__checkbox {
+    display: none;
+  }
+
+  &__btn {
+    width: 7rem;
+    height: 7rem;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+    display: none;
+    position: relative;
+
+    @media only screen and (max-width: $bp-small) {
+      display: inline-block;
+    }
+
+    &,
+    &::before,
+    &::after {
+      width: 5rem;
+      height: 2px;
+      background-color: $color-white;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+
+    &::before {
+      top: -1.5rem;
+    }
+
+    &::after {
+      top: 1.5rem;
+    }
+  }
+
   &__menu {
     list-style: none;
+
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
   }
 
   &__item {
