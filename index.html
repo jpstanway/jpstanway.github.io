@@ -31,15 +31,6 @@
           <h2 class="heading-2"><a href="#top">Jordan Stanway</a></h2>
         </div>
 
-        <input
-          type="checkbox"
-          class="navigation__checkbox"
-          id="mobile-nav-toggle"
-        />
-        <label for="mobile-nav-toggle" class="navigation__btn">
-          <span class="navigation__icon">&nbsp;</span>
-        </label>
-
         <ul class="navigation__menu">
           <li class="navigation__item">
             <a href="#about" class="navigation__link">About</a>
@@ -54,27 +45,34 @@
             <a href="#contact" class="navigation__link">Contact</a>
           </li>
         </ul>
+
+        <!-- mobile navigation -->
+        <input
+          type="checkbox"
+          class="navigation__checkbox"
+          id="mobile-nav-toggle"
+        />
+        <label for="mobile-nav-toggle" class="navigation__btn">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__mobile">
+          <ul class="navigation__mobile-menu">
+            <li class="navigation__mobile-item">
+              <a href="#about" class="navigation__mobile-link">About</a>
+            </li>
+            <li class="navigation__mobile-item">
+              <a href="#projects" class="navigation__mobile-link">Projects</a>
+            </li>
+            <li class="navigation__mobile-item">
+              <a href="#skills" class="navigation__mobile-link">Skills</a>
+            </li>
+            <li class="navigation__mobile-item">
+              <a href="#contact" class="navigation__mobile-link">Contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <!-- mobile navigation -->
-      <div class="navigation__mobile">
-        <ul class="navigation__mobile-menu">
-          <li class="navigation__mobile-item navigation__mobile-item--close">
-            <i class="fas fa-times navigation__close-icon"></i>
-          </li>
-          <li class="navigation__mobile-item">
-            <a href="#about" class="navigation__mobile-link">About</a>
-          </li>
-          <li class="navigation__mobile-item">
-            <a href="#projects" class="navigation__mobile-link">Projects</a>
-          </li>
-          <li class="navigation__mobile-item">
-            <a href="#skills" class="navigation__mobile-link">Skills</a>
-          </li>
-          <li class="navigation__mobile-item">
-            <a href="#contact" class="navigation__mobile-link">Contact</a>
-          </li>
-        </ul>
-      </div>
     </div>
     <!-- GRID START -->
     <div class="container">

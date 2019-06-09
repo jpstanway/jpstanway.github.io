@@ -1,5 +1,6 @@
 $(document).ready(() => {
   const navbar = $("#navbar");
+  const mobileMenu = $(".navigation__mobile");
   const navbarHeight = navbar.outerHeight();
   let anchors = $(".anchor");
 
@@ -18,9 +19,11 @@ $(document).ready(() => {
     // detach navbar on scroll
     if (position > 100) {
       navbar.addClass("navigation--scroll");
+      mobileMenu.addClass("navigation__mobile--scroll");
     } else {
       if (navbar.hasClass("navigation--scroll")) {
         navbar.removeClass("navigation--scroll");
+        mobileMenu.removeClass("navigation__mobile--scroll");
       }
     }
 
@@ -41,5 +44,21 @@ $(document).ready(() => {
     }
 
     addActive(current);
+  });
+
+  // mobile nav styles
+  function toggleNavStyles() {
+    $("#navbar").toggleClass("navigation--mobile-bg");
+    $(".navigation__name").toggleClass("navigation__name--mobile");
+    $(".navigation__icon").toggleClass("navigation__icon--open");
+  }
+
+  $("#mobile-nav-toggle").click(() => {
+    toggleNavStyles();
+  });
+
+  $(".navigation__mobile-link").click(() => {
+    $("#mobile-nav-toggle").prop("checked", false);
+    toggleNavStyles();
   });
 });
