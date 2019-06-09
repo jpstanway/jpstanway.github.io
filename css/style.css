@@ -351,7 +351,8 @@ body {
         justify-content: center; } }
   .navigation__icon {
     display: none;
-    position: relative; }
+    position: relative;
+    transition: all 0.5s; }
     @media only screen and (max-width: 43.75em) {
       .navigation__icon {
         display: inline-block; } }
@@ -382,8 +383,9 @@ body {
     text-transform: uppercase; }
   .navigation__name a {
     text-transform: none; }
-  .navigation__name--mobile a {
-    color: #909090; }
+  @media only screen and (max-width: 43.75em) {
+    .navigation__name--mobile a {
+      color: #909090; } }
   .navigation--scroll {
     background-color: rgba(58, 82, 131, 0.9);
     height: 6rem;
@@ -435,6 +437,12 @@ body {
     opacity: 1; }
   .navigation__checkbox:checked ~ .navigation__mobile--scroll {
     top: 6rem; }
+  .navigation__checkbox:checked ~ .navigation__btn .navigation__icon {
+    transform: rotate(45deg); }
+  .navigation__checkbox:checked ~ .navigation__btn .navigation__icon::before,
+  .navigation__checkbox:checked ~ .navigation__btn .navigation__icon::after {
+    top: 0;
+    transform: rotate(90deg); }
 
 .active {
   color: #c0c0c0; }

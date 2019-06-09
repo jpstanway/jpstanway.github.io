@@ -42,6 +42,7 @@
   &__icon {
     display: none;
     position: relative;
+    transition: all 0.5s;
 
     @media only screen and (max-width: $bp-small) {
       display: inline-block;
@@ -104,7 +105,9 @@
   }
 
   &__name--mobile a {
-    color: $color-grey-dark;
+    @media only screen and (max-width: $bp-small) {
+      color: $color-grey-dark;
+    }
   }
 
   &--scroll {
@@ -186,6 +189,16 @@
 
   &__checkbox:checked ~ &__mobile--scroll {
     top: 6rem;
+  }
+
+  &__checkbox:checked ~ &__btn &__icon {
+    transform: rotate(45deg);
+  }
+
+  &__checkbox:checked ~ &__btn &__icon::before,
+  &__checkbox:checked ~ &__btn &__icon::after {
+    top: 0;
+    transform: rotate(90deg);
   }
 }
 
