@@ -19,7 +19,7 @@
 
   &__nav {
     height: 100%;
-    padding: 2rem;
+    padding: 2rem 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -99,8 +99,13 @@
     text-transform: uppercase;
   }
 
+  &__name h3 {
+    font-family: "Permanent Marker", cursive;
+  }
+
   &__name a {
     @extend %link;
+    color: $color-grey-lighter;
     text-transform: none;
   }
 
@@ -115,8 +120,8 @@
     height: 6rem;
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.25);
 
-    .navigation__name h2 {
-      font-size: 2.5rem;
+    .navigation__name h3 {
+      font-size: 2rem;
     }
   }
 
@@ -212,9 +217,3 @@
   position: relative;
   top: -9rem;
 }
-
-// .mobile-nav-icon,
-// .mobile-nav-icon::before,
-// .mobile-nav-icon::after {
-//   background-color: $color-grey-dark;
-// }

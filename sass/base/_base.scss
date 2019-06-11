@@ -10,6 +10,7 @@
 
 html {
   font-size: 62.5%; // 1rem = 10px
+  scroll-behavior: smooth;
 
   @media only screen and (max-width: $bp-small) {
     font-size: 55%;
@@ -19,8 +20,8 @@ html {
 body {
   box-sizing: border-box;
   background-image: linear-gradient(
-      rgba($color-primary-light, 0.5),
-      rgba($color-primary-light, 0.5)
+      rgba($color-primary, 0.65),
+      rgba($color-primary, 0.65)
     ),
     url(../../img/milky-way.jpg);
   background-size: cover;

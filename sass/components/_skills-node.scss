@@ -21,7 +21,8 @@
     height: 15rem;
     background-color: $color-grey-lighter;
     border-radius: 50%;
-    border: 0.5rem solid $color-grey-dark;
+    border-width: 0.5rem;
+    border-image: linear-gradient($color-grey-lighter, $color-grey-dark) 27;
     padding: 1rem;
     box-shadow: 0 0.25rem 0.5rem rgba($color-black, 0.2);
     z-index: 100;

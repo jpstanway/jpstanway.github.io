@@ -6,14 +6,15 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media only screen and (max-width: 43.75em) {
     html {
       font-size: 55%; } }
 
 body {
   box-sizing: border-box;
-  background-image: linear-gradient(rgba(58, 82, 131, 0.5), rgba(58, 82, 131, 0.5)), url(../../img/milky-way.jpg);
+  background-image: linear-gradient(rgba(28, 40, 65, 0.65), rgba(28, 40, 65, 0.65)), url(../../img/milky-way.jpg);
   background-size: cover;
   background-attachment: fixed; }
 
@@ -239,7 +240,8 @@ body {
     height: 15rem;
     background-color: #efefef;
     border-radius: 50%;
-    border: 0.5rem solid #909090;
+    border-width: 0.5rem;
+    border-image: linear-gradient(#efefef, #909090) 27;
     padding: 1rem;
     box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
     z-index: 100;
@@ -335,7 +337,7 @@ body {
   /* MOBILE FUNCTIONALITY */ }
   .navigation__nav {
     height: 100%;
-    padding: 2rem;
+    padding: 2rem 3rem;
     display: flex;
     align-items: center;
     justify-content: space-between; }
@@ -381,7 +383,10 @@ body {
       margin-right: 1rem; }
   .navigation__link {
     text-transform: uppercase; }
+  .navigation__name h3 {
+    font-family: "Permanent Marker", cursive; }
   .navigation__name a {
+    color: #efefef;
     text-transform: none; }
   @media only screen and (max-width: 43.75em) {
     .navigation__name--mobile a {
@@ -390,8 +395,8 @@ body {
     background-color: rgba(58, 82, 131, 0.9);
     height: 6rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25); }
-    .navigation--scroll .navigation__name h2 {
-      font-size: 2.5rem; }
+    .navigation--scroll .navigation__name h3 {
+      font-size: 2rem; }
   @media only screen and (max-width: 43.75em) {
     .navigation--mobile-bg {
       background-color: #efefef;
