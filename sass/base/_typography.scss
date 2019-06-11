@@ -1,15 +1,15 @@
 // font properties for body and headings
 %heading {
   font-family: $font-heading;
-  text-transform: uppercase;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 body {
+  color: $color-white;
   font-family: $font-default;
   font-size: $default-font-size;
   line-height: 1.5;
-  color: $color-white;
 }
 
 .heading-1 {

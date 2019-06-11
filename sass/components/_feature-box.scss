@@ -1,7 +1,7 @@
 .feature {
-  padding: 2rem;
-  display: flex;
   color: $color-white;
+  display: flex;
+  padding: 2rem;
 
   @media only screen and (max-width: $bp-large) {
     justify-content: center;
@@ -12,9 +12,9 @@
   }
 
   &__img {
+    border-right: 1px solid $color-grey-light;
     margin-right: 1rem;
     padding-right: 1rem;
-    border-right: 1px solid $color-grey-light;
 
     &--mobile {
       padding: 0 6px;

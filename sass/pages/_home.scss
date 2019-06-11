@@ -1,6 +1,6 @@
 .section-about {
-  grid-row: 2 / 3;
   grid-column: center-start / center-end;
+  grid-row: 2 / 3;
   padding: 5rem;
 
   @media only screen and (max-width: $bp-large) {
@@ -9,13 +9,13 @@
 
   &__features {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 5rem;
     grid-row-gap: 3rem;
+    grid-template-columns: repeat(3, 1fr);
 
     @media only screen and (max-width: $bp-medium) {
-      grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
     }
 
     @media only screen and (max-width: $bp-small) {
@@ -30,16 +30,16 @@
     $color-primary,
     $color-primary-light
   );
-  grid-row: 3 / 4;
-  grid-column: full-start / full-end;
-  padding: 5rem 2rem;
   box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
+  grid-column: full-start / full-end;
+  grid-row: 3 / 4;
+  padding: 5rem 2rem;
 
   &__projects {
-    grid-column: center-start / center-end;
     display: grid;
-    grid-template-columns: repeat(3, minmax(15rem, 30rem));
+    grid-column: center-start / center-end;
     grid-gap: 5rem;
+    grid-template-columns: repeat(3, minmax(15rem, 30rem));
     justify-content: center;
 
     @media only screen and (max-width: $bp-medium) {
@@ -53,16 +53,16 @@
 }
 
 .section-skills {
-  grid-row: 4 / 5;
   grid-column: center-start / center-end;
+  grid-row: 4 / 5;
   padding: 5rem 0;
 
   &__skills {
+    align-content: center;
     display: grid;
+    grid-gap: 7rem;
     grid-template-columns: repeat(3, min-content);
     justify-content: center;
-    align-content: center;
-    grid-gap: 7rem;
 
     @media only screen and (max-width: $bp-small) {
       grid-template-columns: repeat(2, min-content);
@@ -75,15 +75,14 @@
 }
 
 .section-contact {
-  grid-row: 5 / 6;
+  align-content: center;
+  display: grid;
   grid-column: center-start / center-end;
+  grid-row: 5 / 6;
+  grid-template-columns: minmax(min-content, 75rem);
+  justify-content: center;
 
   @media only screen and (max-width: $bp-small) {
     grid-column: full-start / full-end;
   }
-
-  display: grid;
-  grid-template-columns: minmax(min-content, 75rem);
-  justify-content: center;
-  align-content: center;
 }

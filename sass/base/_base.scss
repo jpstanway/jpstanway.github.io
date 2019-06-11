@@ -3,9 +3,9 @@
 *,
 *::before,
 *::after {
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
 }
 
 html {
@@ -18,12 +18,12 @@ html {
 }
 
 body {
-  box-sizing: border-box;
+  background-attachment: fixed;
   background-image: linear-gradient(
       rgba($color-primary, 0.65),
       rgba($color-primary, 0.65)
     ),
     url(../../img/milky-way.jpg);
   background-size: cover;
-  background-attachment: fixed;
+  box-sizing: border-box;
 }
