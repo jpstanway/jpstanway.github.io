@@ -98,14 +98,16 @@
     text-transform: uppercase;
   }
 
-  &__name h3 {
-    font-family: "Permanent Marker", cursive;
-  }
+  &__name {
+    a {
+      @extend %link;
+      color: $color-grey-lighter;
+      text-transform: none;
+    }
 
-  &__name a {
-    @extend %link;
-    color: $color-grey-lighter;
-    text-transform: none;
+    h3 {
+      font-family: "Permanent Marker", cursive;
+    }
   }
 
   &__name--mobile a {
@@ -115,7 +117,7 @@
   }
 
   &--scroll {
-    background-color: rgba($color-primary-light, 0.9);
+    background-color: rgba($color-primary, 0.9);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.25);
     height: 6rem;
 

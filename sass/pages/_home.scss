@@ -34,6 +34,7 @@
   grid-column: full-start / full-end;
   grid-row: 3 / 4;
   padding: 5rem 2rem;
+  margin: 20rem 0;
 
   &__projects {
     display: grid;
@@ -71,12 +72,6 @@
     @media only screen and (max-width: $bp-smallest) {
       grid-template-columns: min-content;
     }
-  }
-
-  &__more {
-    display: flex;
-    justify-content: center;
-    margin-top: 7rem;
   }
 }
 
