@@ -25,10 +25,24 @@
 
   &--cta {
     background-color: $color-tertiary-light;
+    text-transform: uppercase;
     transition: all 0.2s;
 
     &:hover {
       background-color: lighten($color-tertiary-light, 10%);
+    }
+  }
+
+  &--expand {
+    border-bottom: 1px solid;
+    color: $color-tertiary-lighter;
+    font-size: 1.8rem;
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+    text-decoration: none;
+
+    &:hover {
+      color: lighten($color-tertiary-lighter, 10%);
     }
   }
 }

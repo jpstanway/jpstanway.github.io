@@ -91,9 +91,20 @@ body {
 
 .btn--cta {
   background-color: #3d622b;
+  text-transform: uppercase;
   transition: all 0.2s; }
   .btn--cta:hover {
     background-color: #53853b; }
+
+.btn--expand {
+  border-bottom: 1px solid;
+  color: #598e3f;
+  font-size: 1.8rem;
+  letter-spacing: 1.2px;
+  line-height: 1.2;
+  text-decoration: none; }
+  .btn--expand:hover {
+    color: #6fb14f; }
 
 .contact {
   background-image: linear-gradient(100deg, white 0%, white 50%, #1c2841 50%);
@@ -513,6 +524,10 @@ body {
     @media only screen and (max-width: 31.25em) {
       .section-skills__skills {
         grid-template-columns: min-content; } }
+  .section-skills__more {
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem; }
 
 .section-contact {
   align-content: center;
