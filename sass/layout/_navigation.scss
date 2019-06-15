@@ -1,10 +1,6 @@
 %link {
   color: $color-white;
   text-decoration: none;
-
-  &:hover {
-    color: $color-grey-light;
-  }
 }
 
 .navigation {
@@ -78,6 +74,8 @@
   }
 
   &__menu {
+    display: flex;
+    height: 100%;
     list-style: none;
 
     @media only screen and (max-width: $bp-small) {
@@ -86,7 +84,13 @@
   }
 
   &__item {
-    display: inline-block;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+
+    &:hover > a {
+      color: $color-grey-light;
+    }
 
     &:not(:last-child) {
       margin-right: 1rem;
@@ -99,6 +103,10 @@
   }
 
   &__name {
+    align-items: center;
+    display: flex;
+    height: 100%;
+
     a {
       @extend %link;
       color: $color-grey-lighter;
@@ -107,6 +115,10 @@
 
     h3 {
       font-family: "Permanent Marker", cursive;
+    }
+
+    &:hover > h3 a {
+      color: $color-grey-light;
     }
   }
 

@@ -332,8 +332,6 @@ body {
 .navigation__link, .navigation__name a {
   color: #fff;
   text-decoration: none; }
-  .navigation__link:hover, .navigation__name a:hover {
-    color: #c0c0c0; }
 
 .navigation {
   background-color: transparent;
@@ -384,21 +382,33 @@ body {
     .navigation__icon--open, .navigation__icon--open::before, .navigation__icon--open::after {
       background-color: #909090; }
   .navigation__menu {
+    display: flex;
+    height: 100%;
     list-style: none; }
     @media only screen and (max-width: 43.75em) {
       .navigation__menu {
         display: none; } }
   .navigation__item {
-    display: inline-block; }
+    align-items: center;
+    cursor: pointer;
+    display: flex; }
+    .navigation__item:hover > a {
+      color: #c0c0c0; }
     .navigation__item:not(:last-child) {
       margin-right: 1rem; }
   .navigation__link {
     text-transform: uppercase; }
-  .navigation__name a {
-    color: #efefef;
-    text-transform: none; }
-  .navigation__name h3 {
-    font-family: "Permanent Marker", cursive; }
+  .navigation__name {
+    align-items: center;
+    display: flex;
+    height: 100%; }
+    .navigation__name a {
+      color: #efefef;
+      text-transform: none; }
+    .navigation__name h3 {
+      font-family: "Permanent Marker", cursive; }
+    .navigation__name:hover > h3 a {
+      color: #c0c0c0; }
   @media only screen and (max-width: 43.75em) {
     .navigation__name--mobile a {
       color: #909090; } }
