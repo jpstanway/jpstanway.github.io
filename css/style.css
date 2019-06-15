@@ -252,6 +252,7 @@ body {
     justify-content: center;
     padding: 1rem;
     position: relative;
+    transition: all 0.5s ease-out;
     width: 15rem;
     z-index: 100; }
   .skills-node__img {
@@ -280,6 +281,7 @@ body {
     position: absolute;
     top: 45%;
     transform: translateY(-50%);
+    transition: all 0.5s ease-out;
     width: 20rem; }
     .skills-node__connector--vertical {
       top: 100%;
@@ -290,6 +292,9 @@ body {
         top: 100%;
         transform: translateX(-50%) rotate(90deg);
         width: 25rem; } }
+
+.skills-hover-styles {
+  box-shadow: 0 0 3rem rgba(61, 98, 43, 0.8); }
 
 .footer {
   align-items: center;

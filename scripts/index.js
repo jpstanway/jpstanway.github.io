@@ -61,4 +61,50 @@ $(document).ready(() => {
     $("#mobile-nav-toggle").prop("checked", false);
     toggleNavStyles();
   });
+
+  // skills node hover styles
+  $(".skills-group-1").hover(
+    () => {
+      $(".skills-group-1").addClass("skills-hover-styles");
+    },
+    () => {
+      $(".skills-group-1").removeClass("skills-hover-styles");
+    }
+  );
+
+  $(".skills-group-2").hover(
+    () => {
+      $(".skills-group-2").addClass("skills-hover-styles");
+    },
+    () => {
+      $(".skills-group-2").removeClass("skills-hover-styles");
+    }
+  );
+
+  $(".skills-group-3").hover(
+    () => {
+      $(".skills-group-3").addClass("skills-hover-styles");
+    },
+    () => {
+      $(".skills-group-3").removeClass("skills-hover-styles");
+    }
+  );
+
+  $(".skills-group-4").hover(
+    () => {
+      $(".skills-group-4").addClass("skills-hover-styles");
+    },
+    () => {
+      $(".skills-group-4").removeClass("skills-hover-styles");
+    }
+  );
+
+  $(".skills-group-5").hover(
+    () => {
+      $(".skills-group-5").addClass("skills-hover-styles");
+    },
+    () => {
+      $(".skills-group-5").removeClass("skills-hover-styles");
+    }
+  );
 });
