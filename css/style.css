@@ -313,6 +313,9 @@ body {
   display: grid;
   grid-template-columns: [full-start] minmax(2rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 1fr) [col-end]) [center-end] minmax(2rem, 1fr) [full-end];
   grid-template-rows: 70vh 30vh repeat(2, min-content) 80rem 6rem; }
+  @media only screen and (max-width: 43.75em) {
+    .container {
+      grid-template-rows: 100vh repeat(3, min-content) 80rem 6rem; } }
 
 .header {
   align-items: center;
@@ -506,6 +509,9 @@ body {
   grid-row: 3 / 4;
   padding: 5rem 2rem;
   margin: 20rem 0; }
+  @media only screen and (max-width: 31.25em) {
+    .section-projects {
+      margin: 5rem 0; } }
   .section-projects__projects {
     display: grid;
     grid-column: center-start / center-end;
