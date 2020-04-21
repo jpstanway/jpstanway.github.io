@@ -6,9 +6,9 @@
       [col-start] minmax(min-content, 1fr) [col-end]
     )
     [center-end] minmax(2rem, 1fr) [full-end];
-  grid-template-rows: 70vh 30vh repeat(2, min-content) 80rem 6rem;
+  grid-template-rows: 70vh min-content 80rem 6rem;
 
   @media only screen and (max-width: $bp-small) {
-    grid-template-rows: 100vh repeat(3, min-content) 80rem 6rem;
+    grid-template-rows: 100vh min-content 80rem 6rem;
   }
 }

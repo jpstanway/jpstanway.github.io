@@ -28,13 +28,10 @@
 
         <ul class="navigation__menu">
           <li class="navigation__item">
-            <a href="#about" class="navigation__link">About</a>
+            <a href="#header" class="navigation__link">About</a>
           </li>
           <li class="navigation__item">
             <a href="#projects" class="navigation__link">Projects</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#skills" class="navigation__link">Skills</a>
           </li>
           <li class="navigation__item">
             <a href="#contact" class="navigation__link">Contact</a>
@@ -54,13 +51,10 @@
         <div class="navigation__mobile">
           <ul class="navigation__mobile-menu">
             <li class="navigation__mobile-item">
-              <a href="#about" class="navigation__mobile-link">About</a>
+              <a href="#header" class="navigation__mobile-link">About</a>
             </li>
             <li class="navigation__mobile-item">
               <a href="#projects" class="navigation__mobile-link">Projects</a>
-            </li>
-            <li class="navigation__mobile-item">
-              <a href="#skills" class="navigation__mobile-link">Skills</a>
             </li>
             <li class="navigation__mobile-item">
               <a href="#contact" class="navigation__mobile-link">Contact</a>
@@ -71,56 +65,22 @@
     </div>
     <!-- GRID START -->
     <div class="container">
-      <!-- HEADER -->
+      <!-- HEADER / ABOUT -->
       <header class="header">
+        <span id="header" class="anchor"></span>
         <div class="header__title-box u-text-center">
           <h1 class="heading-1">
             Jordan Stanway
           </h1>
-          <h2 class="heading-2 u-margin-bottom-md">Full Stack Web Developer</h2>
-          <a href="#contact" class="btn btn--cta">Contact Me</a>
+          <h2 class="header__sub-heading heading-2">
+            Web Developer
+          </h2>
+          <p class="header__text">
+            Creating optimized, responsive web applications with React.js and
+            more
+          </p>
         </div>
       </header>
-      <!-- ABOUT -->
-      <section class="section section-about">
-        <span id="about" class="anchor"></span>
-        <div class="section-about__features">
-          <div class="feature feature--top">
-            <div class="feature__img">
-              <i class="fab fa-react fa-2x"></i>
-            </div>
-            <div class="feature__content">
-              <h3 class="feature__title heading-3">JavaScript/MERN Stack</h3>
-              <p class="feature__text">
-                My primary development tools consist of the powerful and modern
-                MERN (MongoDB, Express.js, React, Node.js) stack.
-              </p>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="feature__img">
-              <i class="fas fa-mobile-alt fa-2x feature__img--mobile"></i>
-            </div>
-            <div class="feature__content">
-              <h3 class="feature__title heading-3">Responsive Design</h3>
-              <p class="feature__text">
-                Modern, mobile-first development principles.
-              </p>
-            </div>
-          </div>
-          <div class="feature">
-            <div class="feature__img">
-              <i class="far fa-chart-bar fa-2x"></i>
-            </div>
-            <div class="feature__content">
-              <h3 class="feature__title heading-3">UI/UX</h3>
-              <p class="feature__text">
-                Optimized interfaces for a user friendly experience.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
       <!-- PROJECTS -->
       <section class="section section-projects">
         <span id="projects" class="anchor"></span>
@@ -305,137 +265,6 @@
           </div>
         </div>
       </section>
-      <!-- SKILLS -->
-      <section class="section section-skills">
-        <span id="skills" class="anchor"></span>
-        <h2
-          class="section-skills__heading heading-2 u-text-center u-margin-bottom-xl"
-        >
-          Skills
-        </h2>
-        <div class="section-skills__skills">
-          <div class="skills-node">
-            <figure class="skills-node__shape skills-group-1">
-              <img
-                src="https://res.cloudinary.com/mtninja/image/upload/v1585423956/portfolio/reactjs.png"
-                alt="React"
-                class="skills-node__img"
-              />
-            </figure>
-            <p class="skills-node__description skills-node__description--react">
-              React
-            </p>
-            <span
-              class="skills-node__connector skills-node__connector--horizontal skills-group-1"
-            ></span>
-          </div>
-          <div class="skills-node">
-            <figure class="skills-node__shape skills-group-1">
-              <img
-                src="https://res.cloudinary.com/mtninja/image/upload/v1585423959/portfolio/redux.png"
-                alt="Redux"
-                class="skills-node__img skills-node__img--sm"
-              />
-            </figure>
-            <p class="skills-node__description">
-              Redux
-            </p>
-          </div>
-          <div class="skills-node">
-            <figure class="skills-node__shape skills-group-2">
-              <img
-                src="https://res.cloudinary.com/mtninja/image/upload/v1585423865/portfolio/nodejs.png"
-                alt="Node"
-                class="skills-node__img skills-node__img--sm"
-              />
-            </figure>
-            <p class="skills-node__description skills-node__description--top">
-              Node
-            </p>
-            <span
-              class="skills-node__connector skills-node__connector--vertical skills-group-2"
-            ></span>
-          </div>
-          <div class="skills-node">
-            <figure class="skills-node__shape skills-group-3">
-              <img
-                src="https://res.cloudinary.com/mtninja/image/upload/v1585423868/portfolio/npm.png"
-                alt="NPM"
-                class="skills-node__img"
-              />
-            </figure>
-            <p class="skills-node__description skills-node__description--top">
-              npm
-            </p>
-            <span
-              class="skills-node__connector skills-node__connector--vertical skills-group-3"
-            ></span>
-          </div>
-          <div class="skills-node skills-node--javascript">
-            <figure class="skills-node__shape skills-group-4">
-              <img
-                src="https://res.cloudinary.com/mtninja/image/upload/v1585423853/portfolio/javascript.png"
-                alt="JavaScript"
-                class="skills-node__img skills-node__img--lg"
-              />
-            </figure>
-            <p class="skills-node__description">
-              JavaScript
-            </p>
-          </div>
-          <div class="skills-node skills-node--mongo">
-            <figure class="skills-node__shape skills-group-2">
-              <img
-                src="https://res.cloudinary.com/mtninja/image/upload/v1585423863/portfolio/mongodb.png"
-                alt="Mongo"
-                class="skills-node__img skills-node__img--sm"
-              />
-            </figure>
-            <p class="skills-node__description">
-              Mongo
-            </p>
-          </div>
-          <div class="skills-node">
-            <figure class="skills-node__shape skills-group-3">
-              <img
-                src="https://res.cloudinary.com/mtninja/image/upload/v1585423879/portfolio/git.png"
-                alt="Git"
-                class="skills-node__img"
-              />
-            </figure>
-            <p class="skills-node__description">
-              Git
-            </p>
-          </div>
-          <div class="skills-node">
-            <figure class="skills-node__shape skills-group-5">
-              <img
-                src="https://res.cloudinary.com/mtninja/image/upload/v1585423876/portfolio/css-html.png"
-                alt="CSS-HTML"
-                class="skills-node__img"
-              />
-            </figure>
-            <p class="skills-node__description skills-node__description--css">
-              CSS3 + HTML5
-            </p>
-            <span
-              class="skills-node__connector skills-node__connector--horizontal skills-group-5"
-            ></span>
-          </div>
-          <div class="skills-node">
-            <figure class="skills-node__shape skills-group-5">
-              <img
-                src="https://res.cloudinary.com/mtninja/image/upload/v1585423963/portfolio/sass.png"
-                alt="Sass"
-                class="skills-node__img"
-              />
-            </figure>
-            <p class="skills-node__description">
-              Sass
-            </p>
-          </div>
-        </div>
-      </section>
       <!-- CONTACT -->
       <section class="section section-contact">
         <span id="contact" class="anchor"></span>
@@ -476,7 +305,7 @@
               <div class="contact__portrait-overlay"></div>
             </div>
             <p class="contact__name">Jordan Stanway</p>
-            <p class="contact__role">Full Stack Web Developer</p>
+            <p class="contact__role">Web Developer</p>
           </div>
         </div>
       </section>
