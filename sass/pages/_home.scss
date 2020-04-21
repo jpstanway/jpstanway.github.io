@@ -1,29 +1,3 @@
-.section-about {
-  grid-column: center-start / center-end;
-  grid-row: 2 / 3;
-  padding: 5rem;
-
-  @media only screen and (max-width: $bp-large) {
-    padding: 5rem 0;
-  }
-
-  &__features {
-    display: grid;
-    grid-column-gap: 5rem;
-    grid-row-gap: 3rem;
-    grid-template-columns: repeat(3, 1fr);
-
-    @media only screen and (max-width: $bp-medium) {
-      grid-column-gap: 2rem;
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media only screen and (max-width: $bp-small) {
-      grid-template-columns: 1fr;
-    }
-  }
-}
-
 .section-projects {
   background-image: linear-gradient(
     to right bottom,
@@ -32,9 +6,8 @@
   );
   box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
   grid-column: full-start / full-end;
-  grid-row: 3 / 4;
   padding: 5rem 2rem;
-  margin: 20rem 0;
+  margin: 0;
 
   @media only screen and (max-width: $bp-smallest) {
     margin: 5rem 0;
@@ -57,33 +30,10 @@
   }
 }
 
-.section-skills {
-  grid-column: center-start / center-end;
-  grid-row: 4 / 5;
-  padding: 5rem 0;
-
-  &__skills {
-    align-content: center;
-    display: grid;
-    grid-gap: 7rem;
-    grid-template-columns: repeat(3, min-content);
-    justify-content: center;
-
-    @media only screen and (max-width: $bp-small) {
-      grid-template-columns: repeat(2, min-content);
-    }
-
-    @media only screen and (max-width: $bp-smallest) {
-      grid-template-columns: min-content;
-    }
-  }
-}
-
 .section-contact {
   align-content: center;
   display: grid;
   grid-column: center-start / center-end;
-  grid-row: 5 / 6;
   grid-template-columns: minmax(min-content, 75rem);
   justify-content: center;
 
