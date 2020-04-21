@@ -14,7 +14,7 @@ html {
 
 body {
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../img/milky-way.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://res.cloudinary.com/mtninja/image/upload/v1587495323/portfolio/milky-way_-_resized_compressed.jpg");
   background-size: cover;
   box-sizing: border-box; }
 
@@ -168,31 +168,6 @@ body {
   .contact__name, .contact__role {
     color: #fff; }
 
-.feature {
-  color: #fff;
-  display: flex;
-  padding: 2rem; }
-  @media only screen and (max-width: 75em) {
-    .feature {
-      justify-content: center; } }
-  @media only screen and (max-width: 43.75em) {
-    .feature {
-      justify-content: flex-start; } }
-  .feature__img {
-    border-right: 1px solid #c0c0c0;
-    margin-right: 1rem;
-    padding-right: 1rem; }
-    .feature__img--mobile {
-      padding: 0 6px; }
-  .feature__title {
-    line-height: 1;
-    margin-bottom: 1rem; }
-  .feature__text {
-    font-size: 1.8rem; }
-  @media only screen and (max-width: 62.5em) {
-    .feature--top {
-      grid-column: 1 / -1; } }
-
 .project__preview {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
   overflow: hidden;
@@ -229,72 +204,6 @@ body {
 
 .project__title {
   padding: 1.5rem 0 1rem 0; }
-
-.skills-node {
-  display: grid;
-  justify-items: center;
-  position: relative; }
-  @media only screen and (max-width: 43.75em) {
-    .skills-node--javascript {
-      grid-column: 1 / -1;
-      grid-row: 1 / 2; } }
-  @media only screen and (max-width: 31.25em) {
-    .skills-node--mongo {
-      grid-row: 5 / 6; } }
-  .skills-node__shape {
-    align-items: center;
-    background-color: #efefef;
-    border: 0.5rem solid #909090;
-    border-radius: 50%;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-    display: flex;
-    height: 15rem;
-    justify-content: center;
-    padding: 1rem;
-    position: relative;
-    transition: all 0.5s ease-out;
-    width: 15rem;
-    z-index: 100; }
-  .skills-node__img {
-    width: 80%; }
-    .skills-node__img--sm {
-      width: 100%; }
-    .skills-node__img--lg {
-      width: 60%; }
-  .skills-node__description {
-    left: 50%;
-    position: absolute;
-    text-align: center;
-    top: 108%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    z-index: 100; }
-    .skills-node__description--top {
-      top: -8%; }
-    @media only screen and (max-width: 31.25em) {
-      .skills-node__description--react, .skills-node__description--css {
-        top: -8%; } }
-  .skills-node__connector {
-    background-color: #909090;
-    height: 1rem;
-    left: 50%;
-    position: absolute;
-    top: 45%;
-    transform: translateY(-50%);
-    transition: all 0.5s ease-out;
-    width: 20rem; }
-    .skills-node__connector--vertical {
-      top: 100%;
-      transform: translateX(-50%) rotate(90deg);
-      width: 25rem; }
-    @media only screen and (max-width: 31.25em) {
-      .skills-node__connector--horizontal {
-        top: 100%;
-        transform: translateX(-50%) rotate(90deg);
-        width: 25rem; } }
-
-.skills-hover-styles {
-  box-shadow: 0 0 3rem rgba(61, 98, 43, 0.8); }
 
 .footer {
   align-items: center;
