@@ -25,10 +25,7 @@ body {
 
 .heading-2 {
   @extend %heading;
-  color: transparent;
-  background-color: $color-secondary;
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: $color-secondary;
   font-size: 3.2rem;
   font-weight: 700;
 
