@@ -14,7 +14,7 @@ html {
 
 body {
   background-attachment: fixed;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://res.cloudinary.com/mtninja/image/upload/v1587495323/portfolio/milky-way_-_resized_compressed.jpg");
+  background-image: linear-gradient(rgba(28, 40, 65, 0.8), rgba(28, 40, 65, 0.8)), url("https://res.cloudinary.com/mtninja/image/upload/v1587495323/portfolio/milky-way_-_resized_compressed.jpg");
   background-size: cover;
   box-sizing: border-box; }
 
@@ -39,8 +39,9 @@ body {
 
 .heading-2 {
   color: transparent;
-  background-image: linear-gradient(to right, #598e3f, #28411c);
+  background-color: #8f9295;
   -webkit-background-clip: text;
+  background-clip: text;
   font-size: 3.2rem;
   font-weight: 700; }
   @media only screen and (max-width: 31.25em) {
@@ -94,15 +95,8 @@ body {
   outline: none;
   transform: translateY(3px); }
 
-.btn--cta {
-  background-color: #622b3d;
-  text-transform: uppercase;
-  transition: all 0.2s; }
-  .btn--cta:hover {
-    background-color: #853b53; }
-
 .contact {
-  background-image: linear-gradient(100deg, white 0%, white 50%, #1c2841 50%);
+  background-image: linear-gradient(100deg, white 0%, white 50%, #314e66 50%);
   background-size: cover;
   border-radius: 4px;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
@@ -113,7 +107,7 @@ body {
   width: 100%; }
   @media only screen and (max-width: 43.75em) {
     .contact {
-      background-image: linear-gradient(180deg, white 0%, white 50%, #1c2841 50%);
+      background-image: linear-gradient(180deg, white 0%, white 50%, #314e66 50%);
       border-radius: 0;
       grid-template-columns: 1fr;
       height: 45rem;
@@ -131,9 +125,9 @@ body {
     .contact__social-item:not(:last-child) {
       margin-right: 2rem; }
   .contact__social-icon {
-    color: #1c2841; }
+    color: #314e66; }
   .contact__social-link:hover .contact__social-icon {
-    color: #3a5283; }
+    color: #8f9295; }
   .contact__dev-box {
     align-items: center;
     display: flex;
@@ -157,7 +151,7 @@ body {
     width: 100%;
     z-index: 20; }
   .contact__portrait {
-    border: 2px solid #411c28;
+    border: 2px solid #8f9295;
     border-radius: 50%;
     max-height: 100%;
     max-width: 100%;
@@ -307,7 +301,7 @@ body {
     cursor: pointer;
     display: flex; }
     .navigation__item:hover > a {
-      color: #c0c0c0; }
+      color: #8f9295; }
     .navigation__item:not(:last-child) {
       margin-right: 1rem; }
   .navigation__link {
@@ -322,7 +316,7 @@ body {
     .navigation__name h3 {
       font-family: "Permanent Marker", cursive; }
     .navigation__name:hover > h3 a {
-      color: #c0c0c0; }
+      color: #8f9295; }
   @media only screen and (max-width: 43.75em) {
     .navigation__name--mobile a {
       color: #909090; } }
@@ -385,7 +379,7 @@ body {
     transform: rotate(90deg); }
 
 .active {
-  color: #c0c0c0; }
+  color: #8f9295; }
 
 .anchor {
   display: block;
@@ -394,7 +388,7 @@ body {
   visibility: hidden; }
 
 .section-projects {
-  background-image: linear-gradient(to right bottom, #1c2841, #3a5283);
+  background-color: #314e66;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
   grid-column: full-start / full-end;
   padding: 5rem 2rem;

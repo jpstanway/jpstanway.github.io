@@ -3,7 +3,7 @@
     100deg,
     rgba($color-white, 1) 0%,
     rgba($color-white, 1) 50%,
-    rgba($color-primary, 1) 50%
+    rgba($color-tertiary, 1) 50%
   );
   background-size: cover;
   border-radius: 4px;
@@ -19,7 +19,7 @@
       180deg,
       rgba($color-white, 1) 0%,
       rgba($color-white, 1) 50%,
-      rgba($color-primary, 1) 50%
+      rgba($color-tertiary, 1) 50%
     );
     border-radius: 0;
     grid-template-columns: 1fr;
@@ -48,11 +48,11 @@
   }
 
   &__social-icon {
-    color: $color-primary;
+    color: $color-tertiary;
   }
 
   &__social-link:hover &__social-icon {
-    color: $color-primary-light;
+    color: $color-secondary;
   }
 
   &__dev-box {

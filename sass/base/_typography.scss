@@ -26,12 +26,9 @@ body {
 .heading-2 {
   @extend %heading;
   color: transparent;
-  background-image: linear-gradient(
-    to right,
-    $color-tertiary-lighter,
-    $color-tertiary
-  );
+  background-color: $color-secondary;
   -webkit-background-clip: text;
+  background-clip: text;
   font-size: 3.2rem;
   font-weight: 700;
 

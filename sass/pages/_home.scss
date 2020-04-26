@@ -1,9 +1,5 @@
 .section-projects {
-  background-image: linear-gradient(
-    to right bottom,
-    $color-primary,
-    $color-primary-light
-  );
+  background-color: $color-tertiary;
   box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
   grid-column: full-start / full-end;
   padding: 5rem 2rem;

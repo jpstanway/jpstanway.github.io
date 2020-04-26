@@ -89,7 +89,7 @@
     display: flex;
 
     &:hover > a {
-      color: $color-grey-light;
+      color: $color-secondary;
     }
 
     &:not(:last-child) {
@@ -118,7 +118,7 @@
     }
 
     &:hover > h3 a {
-      color: $color-grey-light;
+      color: $color-secondary;
     }
   }
 
@@ -219,7 +219,7 @@
 }
 
 .active {
-  color: $color-grey-light;
+  color: $color-secondary;
 }
 
 .anchor {

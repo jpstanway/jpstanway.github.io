@@ -22,14 +22,4 @@
     outline: none;
     transform: translateY(3px);
   }
-
-  &--cta {
-    background-color: $color-secondary-light;
-    text-transform: uppercase;
-    transition: all 0.2s;
-
-    &:hover {
-      background-color: lighten($color-secondary-light, 10%);
-    }
-  }
 }
