@@ -19,17 +19,18 @@ body {
   box-sizing: border-box; }
 
 .heading-1, .heading-2, .heading-3 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   text-transform: uppercase; }
 
 body {
   color: #fff;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.6rem;
   line-height: 1.5; }
 
 .heading-1 {
+  color: #efefef;
   font-size: 4rem;
   font-weight: 400;
   letter-spacing: 0.7rem; }
@@ -46,6 +47,7 @@ body {
       font-size: 2.8rem; } }
 
 .heading-3 {
+  color: #c0c0c0;
   font-size: 2.3rem;
   font-weight: 700; }
 
@@ -113,9 +115,11 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-around; }
+    justify-content: space-around;
+    text-align: center; }
   .contact__email {
-    font-size: 2.2rem; }
+    font-size: 2.2rem;
+    font-weight: bold; }
   .contact__social-item {
     display: inline-block;
     list-style: none; }
@@ -310,8 +314,8 @@ body {
     .navigation__name a {
       color: #efefef;
       text-transform: none; }
-    .navigation__name h3 {
-      font-family: "Permanent Marker", cursive; }
+    .navigation__name h2 {
+      font-family: "Montserrat Alternates", sans-serif; }
     .navigation__name:hover > h3 a {
       color: #5e8aa4; }
   @media only screen and (max-width: 43.75em) {
