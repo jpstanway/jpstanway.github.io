@@ -108,7 +108,7 @@ body {
       background-image: linear-gradient(180deg, white 0%, white 50%, #2a3840 50%);
       border-radius: 0;
       grid-template-columns: 1fr;
-      height: 60rem;
+      height: 45rem;
       padding: 2rem; } }
   .contact__info {
     align-items: center;
@@ -116,16 +116,30 @@ body {
     flex-direction: column;
     justify-content: space-around;
     text-align: center; }
+    @media only screen and (max-width: 43.75em) {
+      .contact__info {
+        max-height: 18rem; } }
   .contact__email {
+    display: flex;
+    flex-direction: column;
     font-size: 2.2rem;
     font-weight: bold; }
+    .contact__email a {
+      color: #5e8aa4;
+      text-decoration: none;
+      transition: opacity 0.2s; }
+      .contact__email a:hover {
+        opacity: 0.8;
+        text-decoration: underline; }
+    .contact__email i {
+      color: #2a3840; }
   .contact__social-item {
     display: inline-block;
     list-style: none; }
     .contact__social-item:not(:last-child) {
       margin-right: 2rem; }
   .contact__social-icon {
-    color: #2a3840; }
+    color: #fff; }
   .contact__social-link:hover .contact__social-icon {
     color: #5e8aa4; }
   .contact__dev-box {
@@ -133,32 +147,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-
-.form {
-  margin-right: -1.5rem;
-  min-width: 23rem; }
-  .form__item:not(:last-child) {
-    margin-bottom: 1rem; }
-  .form__label {
-    display: none; }
-  .form__input {
-    border: 1px solid #000;
-    border-radius: 4px;
-    padding: 1rem;
-    min-width: 100%; }
-  .form__submit {
-    background-color: #1b242f;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    float: right;
-    padding: 1rem 2rem;
-    transition: opacity 0.2s; }
-    .form__submit:hover {
-      opacity: 0.8; }
-  @media only screen and (max-width: 43.75em) {
-    .form {
-      margin-top: 12rem; } }
 
 .project__preview {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);

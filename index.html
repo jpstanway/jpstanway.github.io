@@ -295,7 +295,12 @@
                 ...I'm happy to chat!
               </p>
             </div>
-            <p class="contact__email">jpstanway@gmail.com</p>
+            <p class="contact__email">
+              <i class="fas fa-envelope-square fa-2x"></i>
+              <a href="mailto:jpstanway@gmail.com">jpstanway@gmail.com</a>
+            </p>
+          </div>
+          <div class="contact__dev-box">
             <ul class="contact__social-links">
               <li class="contact__social-item">
                 <a
@@ -319,27 +324,6 @@
               </li>
             </ul>
           </div>
-          <div class="contact__dev-box">
-            <form action="" class="form">
-              <div class="form__item">
-                <label for="name" class="form__label">Name</label>
-                <input type="text" name="name" class="form__input" placeholder="Name" />
-              </div>
-              <div class="form__item">
-                <label for="email" class="form__label">Email</label>
-                <input type="text" name="email" class="form__input" placeholder="Email *" required/>
-              </div>
-              <div class="form__item">
-                <label for="phone" class="form__label">Phone</label>
-                <input type="tel" name="phone" class="form__input" placeholder="Phone" />
-              </div>
-              <div class="form__item">
-                <label for="message" class="form__label">Message</label>
-                <textarea name="message" class="form__input" placeholder="Your message *" required></textarea>
-              </div>
-              <button class="form__submit" type="submit">Send</button>
-            </form>
-          </div>
       </section>
       <!-- FOOTER -->
       <footer class="footer">
@@ -356,6 +340,6 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <script src="scripts/index.js" async defer></script>
+    <script src="scripts/navigation.js"></script>
   </body>
 </html>

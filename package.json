@@ -1,6 +1,6 @@
 {
   "name": "jstanway-portfolio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My personal web development portfolio page",
   "main": "index.js",
   "scripts": {
