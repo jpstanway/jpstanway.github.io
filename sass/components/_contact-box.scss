@@ -23,7 +23,7 @@
     );
     border-radius: 0;
     grid-template-columns: 1fr;
-    height: 45rem;
+    height: 60rem;
     padding: 2rem;
   }
 
@@ -62,45 +62,5 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  &__portrait-frame {
-    height: 150px;
-    position: relative;
-    width: 150px;
-
-    @media only screen and (max-width: $bp-small) {
-      width: 100px;
-      height: 100px;
-    }
-  }
-
-  &__portrait-overlay {
-    background-color: rgba($color-black, 0.2);
-    border-radius: 50%;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 20;
-  }
-
-  &__portrait {
-    border: 2px solid $color-secondary;
-    border-radius: 50%;
-    max-height: 100%;
-    max-width: 100%;
-    overflow: hidden;
-  }
-
-  &__name {
-    font-size: 1.8rem;
-    font-weight: 700;
-  }
-
-  &__name,
-  &__role {
-    color: $color-white;
   }
 }

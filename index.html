@@ -107,6 +107,36 @@
           Featured Projects
         </h2>
         <div class="section-projects__projects">
+
+          <div class="project">
+            <figure class="project__preview">
+              <img
+                src="https://res.cloudinary.com/mtninja/image/upload/v1609566104/portfolio/fight-census.png"
+                alt="Project 6"
+                class="project__thumbnail"
+              />
+              <figcaption class="project__links">
+                <a
+                  href="https://www.fightcensus.com"
+                  class="project__project-link"
+                  target="_blank"
+                  ><i class="far fa-eye fa-3x"></i
+                ></a>
+                <a
+                  href="https://github.com/jpstanway/fight-census"
+                  class="project__project-link"
+                  target="_blank"
+                  ><i class="fab fa-github fa-3x"></i
+                ></a>
+              </figcaption>
+            </figure>
+
+            <h3 class="project__title heading-3">Fight Census</h3>
+            <p class="project__description">
+              Annual UFC stats/census using a Node.js web scraper and SSR technology
+            </p>
+          </div>
+
           <div class="project">
             <figure class="project__preview">
               <img
@@ -252,34 +282,6 @@
             </p>
           </div>
 
-          <div class="project">
-            <figure class="project__preview">
-              <img
-                src="https://res.cloudinary.com/mtninja/image/upload/v1585423950/portfolio/portfolio-project-sm-6.jpg"
-                alt="Project 6"
-                class="project__thumbnail"
-              />
-              <figcaption class="project__links">
-                <a
-                  href="https://codepen.io/mtninja/full/VBwYja/"
-                  class="project__project-link"
-                  target="_blank"
-                  ><i class="far fa-eye fa-3x"></i
-                ></a>
-                <a
-                  href="https://github.com/jpstanway/fcc-technical-doc"
-                  class="project__project-link"
-                  target="_blank"
-                  ><i class="fab fa-github fa-3x"></i
-                ></a>
-              </figcaption>
-            </figure>
-
-            <h3 class="project__title heading-3">Technical Document</h3>
-            <p class="project__description">
-              Technical documentation page for basic CSS
-            </p>
-          </div>
         </div>
       </section>
       <!-- CONTACT -->
@@ -318,18 +320,26 @@
             </ul>
           </div>
           <div class="contact__dev-box">
-            <div class="contact__portrait-frame">
-              <img
-                src="https://res.cloudinary.com/mtninja/image/upload/v1585423953/portfolio/portrait.jpg"
-                alt="My photo"
-                class="contact__portrait"
-              />
-              <div class="contact__portrait-overlay"></div>
-            </div>
-            <p class="contact__name">Jordan Stanway</p>
-            <p class="contact__role">Web Developer</p>
+            <form action="" class="form">
+              <div class="form__item">
+                <label for="name" class="form__label">Name</label>
+                <input type="text" name="name" class="form__input" placeholder="Name" />
+              </div>
+              <div class="form__item">
+                <label for="email" class="form__label">Email</label>
+                <input type="text" name="email" class="form__input" placeholder="Email *" required/>
+              </div>
+              <div class="form__item">
+                <label for="phone" class="form__label">Phone</label>
+                <input type="tel" name="phone" class="form__input" placeholder="Phone" />
+              </div>
+              <div class="form__item">
+                <label for="message" class="form__label">Message</label>
+                <textarea name="message" class="form__input" placeholder="Your message *" required></textarea>
+              </div>
+              <button class="form__submit" type="submit">Send</button>
+            </form>
           </div>
-        </div>
       </section>
       <!-- FOOTER -->
       <footer class="footer">

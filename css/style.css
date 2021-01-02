@@ -13,9 +13,8 @@ html {
       font-size: 55%; } }
 
 body {
-  background-attachment: fixed;
-  background-image: linear-gradient(rgba(27, 36, 47, 0.7), rgba(27, 36, 47, 0.7)), url("https://res.cloudinary.com/mtninja/image/upload/v1587495323/portfolio/milky-way_-_resized_compressed.jpg");
-  background-size: cover;
+  background: #1b242f;
+  background: linear-gradient(0deg, #1b242f 0%, black 100%);
   box-sizing: border-box; }
 
 .heading-1, .heading-2, .heading-3 {
@@ -109,7 +108,7 @@ body {
       background-image: linear-gradient(180deg, white 0%, white 50%, #2a3840 50%);
       border-radius: 0;
       grid-template-columns: 1fr;
-      height: 45rem;
+      height: 60rem;
       padding: 2rem; } }
   .contact__info {
     align-items: center;
@@ -134,34 +133,32 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center; }
-  .contact__portrait-frame {
-    height: 150px;
-    position: relative;
-    width: 150px; }
-    @media only screen and (max-width: 43.75em) {
-      .contact__portrait-frame {
-        width: 100px;
-        height: 100px; } }
-  .contact__portrait-overlay {
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 20; }
-  .contact__portrait {
-    border: 2px solid #5e8aa4;
-    border-radius: 50%;
-    max-height: 100%;
-    max-width: 100%;
-    overflow: hidden; }
-  .contact__name {
-    font-size: 1.8rem;
-    font-weight: 700; }
-  .contact__name, .contact__role {
-    color: #fff; }
+
+.form {
+  margin-right: -1.5rem;
+  min-width: 23rem; }
+  .form__item:not(:last-child) {
+    margin-bottom: 1rem; }
+  .form__label {
+    display: none; }
+  .form__input {
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 1rem;
+    min-width: 100%; }
+  .form__submit {
+    background-color: #1b242f;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    padding: 1rem 2rem;
+    transition: opacity 0.2s; }
+    .form__submit:hover {
+      opacity: 0.8; }
+  @media only screen and (max-width: 43.75em) {
+    .form {
+      margin-top: 12rem; } }
 
 .project__preview {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);

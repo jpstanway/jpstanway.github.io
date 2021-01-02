@@ -1,0 +1,39 @@
+.form {
+  margin-right: -1.5rem;
+  min-width: 23rem;
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__label {
+    display: none;
+  }
+
+  &__input {
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 1rem;
+    min-width: 100%;
+  }
+
+  &__submit {
+    background-color: $color-primary;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    padding: 1rem 2rem;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin-top: 12rem;
+  }
+}
